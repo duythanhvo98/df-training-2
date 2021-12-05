@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(../public/fonts/SourceSansPro-Regular.ttf);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  height: 450px;
+  background-color: #fff;
+  border: 2px solid #ececec;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: default;
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.card-body-header {
+  padding: 15px 0;
+}
+
+.card-body-header > h3 {
+  margin: 6px 0;
+}
+
+.card-body-header > .additional-info {
+  font-style: italic;
+  color: #808080;
+}
+
+.highlight-measure-cat {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.highlight-measure {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlight-measure > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.highlight-measure-element {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.highlight-measure-element > * {
+  font-weight: normal;
+  margin: 3px 0;
+}
+
+.highlight-measure-rate {
+  padding-right: 25px;
+}
+
+.highlight-measure-rate > * {
+  margin: 3px 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.arrow-drop-down {
+  color: #ec9d36;
+}
+
+.arrow-drop-up {
+  color: #19a085;
+}
+
+.highlight-measure-rate > div > span:nth-child(1) {
+  font-size: 20px;
+}
+
+.highlight-measure-rate > div > span:nth-child(2) {
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.normal-measure {
+  margin-top: 10px;
+}
+
+.normal-measure > div {
+  padding: 3px 0;
+  margin-top: 3px;
+}
+
+.inline-circle {
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+
+.circle-wrapper {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.circle-wrapper > .circle > .mask,
+.circle-wrapper > .circle > .mask > .fill {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrapper > .circle > .mask {
+  clip: rect(0px, 30px, 30px, 15px);
+}
+
+.circle-wrapper > .circle > .inside-circle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+}
+
+.circle-wrapper > .circle > .mask > .fill {
+  clip: rect(0px, 15px, 30px, 0px);
+  background-color: #19a085;
+}
+
+.circle-wrapper > .circle > .mask.full,
+.circle-wrapper > .circle > .mask > .fill {
+  transform: rotate(175deg);
+}
+
+.normal-measure > div > span:nth-child(1) {
+  font-weight: bold;
+  color: #00528a;
+}
+
+.normal-measure > div .horizontal-bar {
+  position: relative;
+  height: 7px;
+  margin: 3px 0;
+}
+
+.normal-measure > div .horizontal-bar > .inside-horizontal-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.normal-measure > div > .flag {
+  height: 14px;
+  border-left: 1px solid #000;
+}
+
+.normal-measure > div > .extentions {
+  display: flex;
+  margin-top: 5px;
+}
+
+.normal-measure > div > .extentions > .extention {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.normal-measure > div > .extentions > .extention > * {
+  margin-right: 4px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.normal-measure > div > .extentions > .extention > span:nth-child(2) {
+  font-weight: bold;
+  color: #00528a;
+}
+
+.normal-measure > div > .extentions > .extention > .bullet {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.engagement-action {
+  display: flex;
+  margin: 20px 0;
+}
+
+.engagement-action > span {
+  width: 40px;
+  font-size: 15px;
+  text-align: right;
+  margin-right: 10px;
+  padding-top: 3px;
+}
+
+.engagement-action > .progress {
+  flex: 1;
+}
+
+.engagement-action > .progress > .progress-bar {
+  background-color: #4669c2;
+  height: 25px;
+  margin-bottom: 1px;
+}
+
+.engagement-action > .progress > .progress-title {
+  color: #808080;
+}
